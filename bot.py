@@ -99,9 +99,9 @@ if not RENDER_EXTERNAL_HOSTNAME:
 WEBHOOK_URL = f"https://{RENDER_EXTERNAL_HOSTNAME}{WEBHOOK_PATH}"
 
 # ======================== Bot sozlamalari ========================
-BOT_USERNAME = "@R4VEN_kino_bot"
-CHANNEL_USERNAME = "@R4VEN_kino"
-CHANNEL_URL = "https://t.me/R4VEN_kino"
+BOT_USERNAME = "@uznovibotv"
+CHANNEL_USERNAME = "@uznovii"
+CHANNEL_URL = "https://t.me/uznovii"
 
 
 # ======================== SELF-PING ========================
@@ -1037,8 +1037,8 @@ async def handle_code(update: Update, context: CallbackContext):
             await update.message.reply_text("❌ Video yuborishda xatolik yuz berdi.")
             return
         links_msg = (
-            f"📱 Instagram: https://www.instagram.com/kino_r4ven\n"
-            f"📣 Kino kanal: @R4VEN_kino {CHANNEL_USERNAME}"
+            f"📱 Instagram: https://www.instagram.com/uznovi\n"
+            f"📣 Kino kanal: @uznovii {CHANNEL_USERNAME}"
         )
         await update.message.reply_text(links_msg)
         safe_task(send_ad(context.bot, user_id))
